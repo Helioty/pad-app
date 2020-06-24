@@ -1,5 +1,7 @@
 {
   "name": "PadApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
