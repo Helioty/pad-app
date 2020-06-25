@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { NavigationExtras } from '@angular/router';
+import { Pedido } from 'src/app/class/pedido';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  constructor() { }
+  constructor(private navigate: NavController) { }
 
   ngOnInit() {
+  }
+
+  verPedido(pedido: Pedido) {
+    const navExtras: NavigationExtras = {
+      queryParams: {
+        dados: JSON.stringify(pedido)
+      }
+    };
+    this.navigate.navigateForward(['/pedido-detalhes'], navExtras);
   }
 
 }

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,5 +9,41 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col size="12">
+        Pedidos
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header style="font-size: 18px;">
+            <b>Pedido XXX</b>
+          </ion-card-header>
+
+          <ion-card-content>
+            <b>Status:</b> aguardando confirmação.
+            <br>
+            <b>Previsão de entrega:</b> --/--/----
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header style="font-size: 18px;">
+            <b>Pedido YYY</b>
+          </ion-card-header>
+
+          <ion-card-content>
+            <b>Status:</b> Confirmado.
+            <br>
+            <b>Previsão de entrega:</b> 30/06/2020
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
