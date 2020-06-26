@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommonService } from './common/common.service';
-
+import { AuthFireService } from './auth/auth-fire.service';
 
 @NgModule({
   declarations: [],
@@ -9,7 +9,8 @@ import { CommonService } from './common/common.service';
     CommonModule
   ],
   providers: [
-    CommonService
+    CommonService,
+    AuthFireService,
   ]
 })
 export class ServicesModule { }

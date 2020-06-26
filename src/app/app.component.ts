@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
       icon: 'clipboard-outline'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
+      title: 'Login',
+      url: '/login',
       icon: 'trash'
     },
     {

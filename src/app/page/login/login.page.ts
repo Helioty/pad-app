@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthFireService } from 'src/app/services/auth/auth-fire.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  public username = '';
+  public password = '';
+
+  constructor(private authFireS: AuthFireService) { }
 
   ngOnInit() {
+  }
+
+  async login() {
+    await this.authFireS.login(this.username, this.password).then((result) => {
+      console.log('User:');
+      console.log(result);
+    });
   }
 
 }
