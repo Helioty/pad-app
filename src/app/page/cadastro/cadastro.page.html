@@ -1,27 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-grid>
     <ion-row>
       <ion-col size="12">
         <ion-list>
           <ion-item>
             <ion-label position="floating">Usuario</ion-label>
-            <ion-input [(ngModel)]="username0"></ion-input>
+            <ion-input #input0 [(ngModel)]="username0" (keyup.enter)="inputFoco(1)"></ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label position="floating">Senha</ion-label>
-            <ion-input [(ngModel)]="password1"></ion-input>
+            <ion-input #input1 [(ngModel)]="password1" (keyup.enter)="inputFoco(2)"></ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label position="floating">Confirmar Senha</ion-label>
-            <ion-input [(ngModel)]="password2"></ion-input>
+            <ion-input #input2 [(ngModel)]="password2" (keyup.enter)="register()"></ion-input>
           </ion-item>
         </ion-list>
       </ion-col>

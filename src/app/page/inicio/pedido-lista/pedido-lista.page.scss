@@ -1,7 +1,9 @@
 ion-content {
-    ion-grid {
+    ion-item {
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.4);
         border-radius: 6px;
+        padding-bottom: 8px;
+        padding-top: 8px;
     }
 }

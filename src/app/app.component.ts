@@ -19,15 +19,15 @@ export class AppComponent implements OnInit {
       url: '/inicio',
       icon: 'clipboard-outline'
     },
+    // {
+    //   title: 'Login',
+    //   url: '/login',
+    //   icon: 'trash'
+    // },
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'trash'
-    },
-    {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: 'Registro de Produto',
+      url: '/registro',
+      icon: 'server-outline'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
