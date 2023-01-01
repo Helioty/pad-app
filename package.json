@@ -33,12 +33,12 @@
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1000.1",
+    "@angular-devkit/build-angular": "^15.0.4",
     "@angular/cli": "^10.0.4",
     "@angular/compiler": "^10.0.2",
     "@angular/compiler-cli": "^10.0.2",
     "@angular/language-service": "^10.0.2",
-    "@ionic/angular-toolkit": "^2.3.0",
+    "@ionic/angular-toolkit": "^2.3.3",
     "@ionic/lab": "^3.1.7",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
